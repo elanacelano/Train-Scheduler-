@@ -1,0 +1,61 @@
+/*.header-shadow{
+    background-image: url('../images/Train.jpg');
+    width:250px;
+    height:250px;
+}*/
+body {
+	font-family: 'Raleway', sans-serif;
+/*	background-image: ("./images/Train.jpeg")*/;
+	background-image: url("../images/Train.jpg");
+/*	width: 250px;*/
+	background-position: center;
+/*	background-position: center;*/
+	background-repeat: no-repeat;
+    background-color: #cccccc;
+}
+h1 {
+	letter-spacing: 7px;	
+	letter-spacing: 2px;
+}
+h3{
+	letter-spacing: 7px;
+	word-spacing: 10px;	
+}
+h4{
+	letter-spacing: 13px;
+	word-spacing: 20px;
+	background-color: #21294C;
+
+}
+/*th {
+	word-spacing: 30px;
+	:;
+}*/
+button{
+	letter-spacing: 7px;
+	word-spacing: 10px;
+}
+line{
+    background-color: blue;
+}
+
+tr{
+	font-family: 'Raleway', sans-serif;
+	font-style: bold;	
+}
+/*.newspaper {
+    -webkit-column-count: 3; 
+    -moz-column-count: 3; 
+    column-count: 3;
+    -webkit-column-gap: 40px; 
+    -moz-column-gap: 40px; 
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; 
+    -moz-column-rule-style: solid; 
+    column-rule-style: solid;
+}*/
+train-schedule{
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+}
