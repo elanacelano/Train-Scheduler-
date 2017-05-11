@@ -6,11 +6,10 @@
 body {
 	font-family: 'Raleway', sans-serif;
 /*	background-image: ("./images/Train.jpeg")*/;
-	background-image: url("../images/Train.jpg");
+	background: url("../images/Train.jpg");
 /*	width: 250px;*/
 	background-position: center;
 	background: justify;
-
 	background-repeat: no-repeat;
     background-color: #cccccc;
 }
@@ -23,7 +22,7 @@ h3{
 	word-spacing: 10px;	
 }
 h4{
-	letter-spacing: 13px;
+	letter-spacing: 10px;
 	word-spacing: 20px;
 	background-color: #21294C;
 

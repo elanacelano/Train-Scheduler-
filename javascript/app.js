@@ -1,4 +1,4 @@
-    // <script>
+    console.log("ahoy ahoy!");
               var config = {
                 apiKey: "AIzaSyAVM9xPv0SbBhLFMejIghC7Ov8rXmqnpcc",
                 authDomain: "employee-data-management-3c781.firebaseapp.com",
@@ -8,14 +8,14 @@
                 messagingSenderId: "546097273424"
               };
               firebase.initializeApp(config);
-                var database = firebase.database();
+              var database = firebase.database();
               
               $("#submit").on("click", function() {
                 event.preventDefault();
 
                 var name = $("#name-input").val().trim();
                 var destination = $("#destination-input").val().trim();
-                var time = $("#time-input").val().trim();
+                var time = $("#date-input").val().trim();
                 var input = $("#rate-input").val().trim();
 
 
@@ -32,15 +32,18 @@
               $("#time-input").val("");
               $("#rate-input").val("");
 
-              database.ref().on("input", function(snapshot) {
-                console.log(WooHoo it is working)
+         });
 
-                input(object, function (row){
-                  table.add_row(row.header, row.value);
-                }, function (key1, key2){
-                  return object[key1] - object[key2];
-                });
+     database.ref().on("value", function(snapshot) {
+          var sv = snapshot.val();
+          console.log(sv);
 
+          // for(i=0; i < svArr.length; i++){
+          //      console.log(svArr[i]);
+          // }
+
+
+     });
           //     var sv = snapshot.val();
           //     console.log("sv", sv);
 
