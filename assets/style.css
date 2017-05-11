@@ -9,7 +9,8 @@ body {
 	background-image: url("../images/Train.jpg");
 /*	width: 250px;*/
 	background-position: center;
-/*	background-position: center;*/
+	background: justify;
+
 	background-repeat: no-repeat;
     background-color: #cccccc;
 }
@@ -58,4 +59,8 @@ train-schedule{
     -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
     -moz-columns: 100px 3; /* Firefox */
     columns: 100px 3;
+}
+footer{
+	background-color: #3B577D:
+	height: 10px; 
 }

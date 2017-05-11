@@ -14,32 +14,40 @@
                 event.preventDefault();
 
                 var name = $("#name-input").val().trim();
-                var role = $("#role-input").val().trim();
-                var date = $("#date-input").val().trim();
+                var destination = $("#destination-input").val().trim();
+                var time = $("#time-input").val().trim();
                 var input = $("#rate-input").val().trim();
 
 
               database.ref().push({
                 name: name,
-                role: role,
-                date: date,
+                destination: destination,
+                time: time,
                 input: input,
-                // dateAdded: firebase.database.serverValue.timestamp
+                // timeAdded: firebase.database.serverValue.timestamp
               });
 
               $("#name-input").val("");
-              $("#role-input").val("");
-              $("#date-input").val("");
+              $("#destination-input").val("");
+              $("#time-input").val("");
               $("#rate-input").val("");
 
               database.ref().on("input", function(snapshot) {
+                console.log(WooHoo it is working)
 
-              var sv = snapshot.val();
-              console.log("sv", sv);
+                input(object, function (row){
+                  table.add_row(row.header, row.value);
+                }, function (key1, key2){
+                  return object[key1] - object[key2];
+                });
 
-              var svArr = Object.keys(sv);
-              console.log("svArr", svArr);
-          }
+          //     var sv = snapshot.val();
+          //     console.log("sv", sv);
+
+          //     var svArr = Object.keys(sv);
+          //     console.log("svArr", svArr);
+          // }
+          
 
             //   var newspaper = $("#").val().trim();
             //    $("#newspaper").val("Trenton Express", Trenton Express;
