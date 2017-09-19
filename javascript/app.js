@@ -36,11 +36,11 @@
 
      database.ref().on("value", function(snapshot) {
           var sv = snapshot.val();
-          console.log(sv);
+          console.log(Object.keys(sv));
 
-          // for(i=0; i < svArr.length; i++){
-          //      console.log(svArr[i]);
-          // }
+          Object.keys(sv).forEach(function(index){
+               console.log(index);
+          })
 
 
      });
